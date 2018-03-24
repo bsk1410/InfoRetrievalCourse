@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sandeep's Search Engine.</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link type="text/css" rel="stylesheet" href="newSearch.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<body>
+	<header class="header-basic-light">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Sandeep and Randy's <span>Search Engine</span></a></h1>
+
+		<nav>
+			<a href="#" class="selected">Home</a>
+			<a href="#">Map</a>
+			<a href="#">Contact</a>
+		</nav>
+	</div>
+
+	</header>
+	
+	<div>
+		<form class="search" action="">
+  			<input type="search" placeholder="Enter your query..." required>
+  			<button type="submit">Search</button>
+		</form>  
+	</div>
+	<aside class="sidebar-left">
+
+		<!-- <a class="company-logo" href="#">Logo</a> -->
+
+		<div class="sidebar-links">
+			<a class="link-blue selected" href="#"><i class="fa fa-twitter-square"></i>Ranked Tweets</a>
+			<a class="link-green" href="#"><i class="fa fa-map-marker"></i>Mapped tweets</a>
+			<a class="link-yellow" href="#"><i class="fa fa-keyboard-o"></i>Analytics</a>
+		</div>
+
+	</aside>
+	
+	
+
+	
+	<!--
+	<div>
+		<details>
+       		<summary>Summary Example</summary>
+       			<p>George Washington as Algernon Moncrieff</p>
+       			<p>Ronald Reagan as John Worthing</p>
+    	</details>
+	</div>
+	-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+
+		$(function () {
+
+			var links = $('.sidebar-links > a');
+
+			links.on('click', function () {
+
+				links.removeClass('selected');
+				$(this).addClass('selected');
+
+			})
+		});
+
+	</script>
+
+</body>
+</html>
