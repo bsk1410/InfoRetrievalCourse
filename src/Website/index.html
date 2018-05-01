@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search API</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<input type="text" ng-model="searchBox" placeholder="Enter your query here.." required>
+		<input type="submit" ng-model="searchButton" ng-click="getResults()" value="Search">
+		<p>{{searchBox}}</p>
+		<ul>
+			<li ng-repeat="x in results">
+				{{x.text[0]}}
+			</li>
+		</ul>
+	</div>
+<script src="main.js"></script>
+</body>
+</html>

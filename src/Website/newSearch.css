@@ -3,6 +3,7 @@ body {
 	background-size:cover;
 	margin:0;
 	padding:0;
+	/*padding-left: 200px;*/
 }
 
 .header-basic-light{
@@ -170,7 +171,7 @@ body {
 }
 
 .sidebar-left .sidebar-links {
-	margin: 20px auto;
+	margin: 5px auto;
 }
 
 .sidebar-left .sidebar-links a {
@@ -231,6 +232,7 @@ body {
 	color: #86be2e;
 }
 
+
 /* Making the sidebar responsive */
 
 @media (max-width: 900px) {
@@ -244,7 +246,7 @@ body {
 	.sidebar-left {
 		width: auto;
 		height: auto;
-		position: inherit;
+		position: fixed;
 		padding: 20px 0 0;
 	}
 
@@ -259,7 +261,7 @@ body {
 		margin: 0;
 		padding: 14px 0;
 		border-left: none;
-		border-top-width: 2px;
+		border-top-width: 1px;
 		border-top-style: solid;
 	}
 
@@ -299,4 +301,9 @@ body {
 		vertical-align: middle;
 	}
 
+}
+
+/*Table*/
+table {
+    margin: 150px auto;
 }

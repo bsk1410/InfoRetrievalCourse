@@ -9,16 +9,17 @@
 	<link type="text/css" rel="stylesheet" href="newSearch.css"/>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="interactiveSearch.js"></script>
 <body>
 	<header class="header-basic-light">
 
 	<div class="header-limiter">
 
-		<h1><a href="#">Sandeep and Randy's <span>Search Engine</span></a></h1>
+		<h1><a href="newSearchBox.html">Sandeep and Randy's <span>Search Engine</span></a></h1>
 
 		<nav>
-			<a href="newSearchBox.html" class="selected">Home</a>
-			<a href="clickCommonSearch.html">Common Queries</a>
+			<a href="newSearchBox.html">Home</a>
+			<a href="clickCommonSearch.html" class="selected">Common Queries</a>
 			<a href="#">Map</a>
 		</nav>
 	</div>
@@ -26,18 +27,30 @@
 	</header>
 	
 	<div>
-		<form class="search" action="">
-  			<input type="search" placeholder="Enter your query..." required>
+		<form data-lif-use-titles="true" class="search listitem-filterbox" action="" method="GET">
+  			<input type="search" autocomplete="off" name="filter" placeholder="Enter your query..." required>
   			<button type="submit">Search</button>
 		</form>
-		<label for="weather">Select the weather type today: </label>
-		<select id="weather">
-			<option value="">--Make a choice--</option>
-			<option value="sunny">Sunny</option>
-			<option value="rainy">Rainy</option>
-			<option value="snowing">Snowing</option>
-			<option value="overcast">Overcast</option>
-		</select>
+		<table >
+			<tbody>
+				<tr>
+					<td valign="top">
+						<ul>
+							<li><a href="#" title="Entity 1">Sandeep</li>
+							<li><a href="#" title="Entity 2">Kumar</li>
+							<li><a href="#" title="Entity 3">Bijinemula</a></li>
+						</ul>
+					</td>
+					<td valign="top">
+						<ul>
+							<li><a href="#">Robert</a></li>
+							<li><a href="#">Randy</a></li>
+							<li><a href="#">Soper</a></li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	<aside class="sidebar-left">
 
@@ -45,7 +58,7 @@
 
 		<div class="sidebar-links">
 			<a class="link-blue selected" href="#"><i class="fa fa-twitter-square"></i>Ranked Tweets</a>
-			<!--<a class="link-orange" href="clickCommonSearch.html"><i class="fa fa-tasks"></i>Common Queries</a>-->
+			<!--<a class="link-orange" href="#"><i class="fa fa-tasks"></i>Common Queries</a>-->
 			<a class="link-green" href="#"><i class="fa fa-map-marker"></i>Mapped tweets</a>
 			<a class="link-yellow" href="#"><i class="fa fa-keyboard-o"></i>Analytics</a>
 		</div>
