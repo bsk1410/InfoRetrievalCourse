@@ -115,7 +115,7 @@ body {
 	background:transparent;
 }
 
-.search button {
+.search.searchPush {
 	position: relative;
 	float: right;
 	border: 0;

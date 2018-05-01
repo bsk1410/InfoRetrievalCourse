@@ -1,8 +1,8 @@
 app = angular.module('myApp',[]);
 	app.controller('myCtrl',function($scope, $http){
-		$scope.searchBox = "Hilary Clinton";
+		//$scope.searchBox = "Hillary Clinton";
 		var queryURL = "http://localhost:8983/solr/tweet_store/select?q=";
-		queryURL += $scope.searchBox;
+		//queryURL += $scope.searchBox;
 		var isUserId = false;
 		var screenName = false;
 		//weights
@@ -183,22 +183,31 @@ app = angular.module('myApp',[]);
 			return q;
 		}
 
+		isSpanish = 0;
 		function applyBoosts(q){
-			engBoost = ('qf=text_eng^'+wTf+' ')*(1-isSpanish);
-			espBoost = ('qf=text_esp^'+wTf+' ')*(isSpanish);
-			return '{'+engBoost+espBoost+'qf=_text_^'+wTf+'}'+q
+			engBoost = ('qf=text_eng^'+wTf+' ')
+			console.log(engBoost);
+			//espBoost = ('qf=text_esp^'+wTf+' ')*(isSpanish);
+			return '{' +engBoost+'qf=_text_^'+wCf+'}'+q
 		}
 
 		function systemCode(q){
-			q=queryURL+q.replace(' ','%20').replace('"','%22')+'"';
+			q=queryURL+q.replace(' ','%20').replace('"','%22')+'&wt=json';
 			return q
 		}	
 		//console.log($scope.searchBox);
-		var q = replaceEntities($scope.searchBox);
+		//var q = replaceEntities($scope.searchBox);
 		//console.log(q);
-		qSys = systemCode(q);
+		//qSys = systemCode(q);
 		//console.log(q);
 		$scope.getResults=function(){
+			queryURL = "http://localhost:8983/solr/tweet_store/select?q=";
+			queryURL += $scope.searchBox;
+			var q = replaceEntities($scope.searchBox);
+			//q = applyBoosts(q);
+			qSys = systemCode(q);
+
+			console.log(qSys);
 			$http.get(qSys).then(function(response){
 				$scope.results = response.data.response.docs;
 			});
