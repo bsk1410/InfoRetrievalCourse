@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+<head>
+	<title>Learn Twitter Retrieval</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script src="testTweet.js"></script>
+	<script>window.twttr = (function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0],
+  t = window.twttr || {};
+if (d.getElementById(id)) return t;
+js = d.createElement(s);
+js.id = id;
+js.src = "https://platform.twitter.com/widgets.js";
+fjs.parentNode.insertBefore(js, fjs);
+
+t._e = [];
+t.ready = function(f) {
+  t._e.push(f);
+};
+
+return t;
+}(document, "script", "twitter-wjs"));</script>
+
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<!--<div id="test"></div>-->
+		<p ng-bind-html="results"></p>
+	</div>
+
+	
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">
+		<a href="https://twitter.com/hashtag/viral?src=hash&amp;ref_src=twsrc%5Etfw">#viral</a> 
+		Chaos erupts on GOP convention floor after voice vote shuts... 
+		<a href="https://t.co/baxnKCRDsG">https://t.co/baxnKCRDsG</a> 
+		<a href="https://t.co/G2Bc3X4qN9">pic.twitter.com/G2Bc3X4qN9</a>
+	</p>&mdash; 
+	hillary clinton now (@shreyanews365) 
+	<a href="https://twitter.com/shreyanews365/status/755192407910604800?ref_src=twsrc%5Etfw">July 19, 2016</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hillary Clinton calls GOP convention \'surreal,\' compares to \'Wizard...\nVia News Break: https://t.co/dXBIsZsI1J https://t.co/l5T3mJMWGK</p>&mdash;hillary clinton now@shreyanews365</blockquote>
+</body>
+</html>

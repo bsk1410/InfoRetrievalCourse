@@ -1,0 +1,74 @@
+alicia machado:"alicia machado" aliciamachado machado
+american flag:"american flag" "american flags" americanflag flag
+barack obama,president obama,pres obama,potus:"barack obama" barackobama "president obama" presidentobama "pres obama" presobama barack obama potus
+ben carson:"ben carson" bencarson carson
+bernie sanders,sen sanders,senator sanders:"bernie sanders" berniesanders sanders sensanders senatorsanders
+bill clinton,president clinton,pres clinton:"bill clinton" billclinton "president clinton" presidentclinton "pres clinton" presclinton
+black lives matter,blacklivesmatter:"black lives matter" blacklivesmatter
+blue lives matter,bluelivesmatter:"blue lives matter" bluelivesmatter
+build the wall,buildthewall:"build the wall" buildthewall "the wall"
+chris christie,governor christie,gov christie:"chris christie" chrischristie "governor christie" governorchristie "gov christie" govchristie christie
+cleveland browns,clevelandbrowns:"cleveland browns" clevelandbrowns browns
+climate change,global warming,climatechange,globalwarming:"climate change" climatechange "global warming" globalwarming
+clinton foundation,clintonfoundation:"clinton foundation" clintonfoundation
+convention speech:"convention speech", speech
+cory booker,senator booker,sen booker:"cory booker" corybooker booker "senator booker" senatorbooker "sen booker" senbooker
+crooked hillary,crookedhillary:"crooked hillary" crookedhillary
+debate poll,debatepoll:"debate poll" debatepoll
+wasserman-schultz,wasserman schultz,dws:"wasserman-schultz" "wasserman schultz" wassermanschultz debbiewassermanschultz dws 
+democratic convention,democratic national convention:"democratic convention" "democratic national convention" democraticconvention convention
+democratic national committee,dnc:"democratic national committee" dnc
+democratic party,dems,democrats:"democratic party" democraticparty dems democrats
+donald j trump,donald trump:"donald j trump" "donald trump" donaldjtrump donaldtrump trump
+donna brazile:donnabrazile	"donna brazile"
+drinking game:"drinking game" drinkinggame
+elizabeth warren,senator warren,sen warren:"elizabeth warren" elizabethwarren "senator warren" senatorwarren "sen warren" senwarren warren
+fact check:"fact check" factcheck
+fox news:"fox news" foxnews
+glass ceiling,glassceiling:"glass ceiling" glassceiling
+go high,gohigh:"go high" gohigh
+republican convention,republican national convention:"gop convention" "republican convention" "republican national convention" gopconvention republicanconvention convention
+gun violence,gunviolence:"gun violence" gunviolence
+hillary clinton,secretray clinton,sec clinton,senator clinton,sen clinton,hrc:"hillary clinton" "secretray clinton" "sec clinton" "senator clinton" "sen clinton" hrc hillaryclinton secretaryclinton secclinton senatorclinton senclinton hillary clinton
+ivanka trump:"ivanka trump" ivankatrump~1 ivanka~1
+jill stein:"jill stein" jillstein stein
+joe biden,uncle joe,vice president,vpotus:"joe biden" joebiden "uncle joe" unclejoe "vice president" vpotus biden
+katy perry:"katy perry" kattyperry
+lady gaga:"lady gaga" ladygaga
+laura ingraham:"laura ingraham" lauraingraham~1 ingraham~1
+lester holt:"lester holt" lesterholt lester holt
+make america great again,making america great again,maga:"make america great again" "making america great again" maga
+melania trump:"melania trump" melaniatrump melania
+michael bloomberg,mayor bloomberg:"michael bloomberg" "mayor bloomberg" bloomberg
+michelle obama,first lady,flotus:"michelle obama" michelleobama "first lady" flotus michelle
+middle class:"middle class"
+mike pence,governor pence,gov pence:"mike pence" mikepence "governor pence" governorpence "gov pence" govpence pence
+miss piggy,misspiggy:"miss piggy" misspiggy
+national security:"national security" nationalsecurity
+new york,ny,nyc,big apple:"new york" newyork ny nyc "big apple" bigapple
+open carry:"open carry" opencarry
+paul ryan:"paul ryan" paulryan ryan
+peter thiel:"peter thiel" peterthiel thiel
+reince priebus:"reince priebus" reincepriebus~1 priebus~1
+release the tax returns:"release the tax returns" "tax returns"
+republican national committee,rnc:"republican national committee" rnc
+republican national party,republican party,gop,republicans:"republican national party" "republican party" republicanparty gop republicans
+rigged system,riggedsystem:"rigged system" riggedsystem
+roll call:"roll call" rollcall
+ronald reagan:"ronald reagan" ronaldreagan reagan
+rudy giuliani,rudy,mayor giuliani,giuliani:"rudy giuliani" rudygiuliani~1 rudy giuliani~1 "mayor giuliani" mayorgiuliani~1
+sarah silverman:"sarah silverman" sarahsilverman silverman
+scott baio:"scott baio" scottbaio baio
+social media:"social media" socialmedia
+south dakota,sd:"south dakota" sd
+stephen colbert:"stephen colbert" stephencolbert colbert
+steve king,rep king:"steve king" steveking "rep king" repking king
+stronger together,strongertogether:"stronger together" strongertogether
+susan sarandon:"susan sarandon" susansarandon~1 sarandon~1
+team deplorables,teamdeplorables:"team deplorables" teamdeplorables
+ted cruz,senator cruz,sen cruz:"ted cruz" "senator cruz" "sen cruz" tedcruz senatorcruz sencruz ted cruz
+tim kaine,senator kaine,sen kaine:"tim kaine" timkaine "senator kaine" senatorkaine "sen kaine" senkaine tim kaine
+united states,usa:"united states" usa
+wall street:"wall street" wallstreet
+white house:"white house" whitehouse
+william barber:"william barber" williambarber~1 barber~1
