@@ -55,10 +55,17 @@ def getSolrResponse(query):
     htmTags = []
     for tweets in t:
         urlString = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">'
-        #hashes = findHash(t['text_eng'],'#')
-        urlString+=str(tweets['text_eng'])+'</p>&mdash;'+str(tweets['user_name'])+'@'+str(tweets['user_screen_name'])+'</blockquote>'
-        htmTags.append(urlString)        
-    return str(htmTags)
+            #hashes = findHash(t['text_eng'],'#')
+        txt = ''.join([x for x in tweets['text_eng'] if x not in ('\\', '\n')])
+        txt = ' '.join(txt.split())
+        unm = ''.join([x for x in tweets['user_name'] if x not in ('\\', '\n')])
+        unm = ' '.join(unm.split())
+        usnm = ''.join([x for x in tweets['user_screen_name'][0] if x not in ('\\', '\n')])
+        usnm = ' '.join(usnm.split())
+        urlString+=str(txt)+'</p>&mdash;'+str(unm)+'@'+str(usnm)+'</blockquote>'
+        htmTags.append(urlString)  
+    htmlDict = {'docs':htmTags}
+    return jsonify(htmlDict)
 
 @app.route('/favicon.ico') 
 def favicon(): 

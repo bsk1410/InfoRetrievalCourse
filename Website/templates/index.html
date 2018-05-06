@@ -5,6 +5,7 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <link type="text/css" rel="stylesheet" href="newSearch.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -21,11 +22,6 @@
 
     <h1><a href="#">Sandeep and Randy's <span>Search Engine</span></a></h1>
 
-    <nav>
-      <a href="newSearchBox.html" class="selected">Home</a>
-      <a href="clickCommonSearch.html">Common Queries</a>
-      <a href="#">Map</a>
-    </nav>
   </div>
 
   </header>
@@ -40,32 +36,23 @@
 <div class="form-group col-xs-3">   
 <label for="exampleSelect1" class="col-xs-5">Hashtags:</label>
 <div class="col-xs-7"> 
-    <select class="form-control" id="exampleSelect1">
-      <option>None</option>
-      <option>RNCinCLE</option>
-      <option>ElectionDay</option>
-      <option>Debates2016</option>
-      <option>GOPConvention</option>
-      <option>DebateNight</option>
-      <option>ElectionNight</option>
-      <option>MAGA</option>
-      <option>TrumpPence16</option>
-    </select>
+    <select id="exampleSelect1" class="form-control" ng-model="selectedName" ng-options="x for x in names">
+    <select></select>
 </div>
   </div>
 <div class="form-group col-xs-6">
 <label for="col-xs-2">Language:</label> 
-<label class="radio-inline">
-      <input type="radio" name="optradio" checked="checked">English
+    <label class="radio-inline">
+      <input ng-model="lang" type="radio" name="optradio" ng-value='"English"' checked='checked'>English
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">Spanish
+      <input ng-model="lang" type="radio" name="optradio" ng-value='"Spanish"'>Spanish
     </label>
 </div>
 <div class="form-group col-xs-3">
     <label for="inputEmail3" class="col-xs-4">Username:</label>
     <div class="col-xs-8">
-      <input type="text" class="form-control" id="input3" placeholder="@username">
+      <input type="text" class="form-control" id="input3" placeholder="@username" ng-model="username">
     </div>
   </div>
   <!--
