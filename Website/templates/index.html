@@ -24,55 +24,40 @@
 
   </div>
 
-  </header>
-  <div ng-app="myApp" ng-controller="myCtrl">
-<div class="container-fluid text-center" style="margin-top:20px"> 
-<div class="form-group row">
-<div class="col-xs-12">
-    <input type="text" class="col-xs-5" ng-model="searchBox" placeholder="Enter your query here.." required style="float:none">
-    <input type="submit" class="col-xs-2 float-none" ng-model="searchButton" ng-click="getResults()" value="Search" style="float:none"> 
-</div>
-</div>
+</header>
+  <div ng-app="myApp" ng-controller="myCtrl" class="spc1">
+    <div class="container-fluid text-center spc2" style="margin-top:20px"> 
+      <div class="form-group row">
+        <div class="col-xs-12">
+          <input type="text" class="col-xs-5" ng-model="searchBox" placeholder="Enter your query here.." required style="float:none">
+          <input type="submit" class="col-xs-2 float-none" ng-model="searchButton" ng-click="getResults()" value="Search" style="float:none"> 
+        </div>
+      </div>
 <div class="form-group col-xs-3">   
-<label for="exampleSelect1" class="col-xs-5">Hashtags:</label>
-<div class="col-xs-7"> 
+  <label for="exampleSelect1" class="col-xs-5">Hashtags:</label>
+  <div class="col-xs-7"> 
     <select id="exampleSelect1" class="form-control" ng-model="selectedName" ng-options="x for x in names">
     <select></select>
-</div>
+  </div>
   </div>
 <div class="form-group col-xs-6">
-<label for="col-xs-2">Language:</label> 
-    <label class="radio-inline">
-      <input ng-model="lang" type="radio" name="optradio" ng-value='"English"' checked='checked'>English
-    </label>
-    <label class="radio-inline">
-      <input ng-model="lang" type="radio" name="optradio" ng-value='"Spanish"'>Spanish
-    </label>
+  <label for="col-xs-2">Language:</label> 
+  <label class="radio-inline">
+    <input ng-model="lang" type="radio" name="optradio" ng-value='"English"' checked='checked'>English
+  </label>
+  <label class="radio-inline">
+  <input ng-model="lang" type="radio" name="optradio" ng-value='"Spanish"'>Spanish
+  </label>
 </div>
-<div class="form-group col-xs-3">
+  <div class="form-group col-xs-3">
     <label for="inputEmail3" class="col-xs-4">Username:</label>
     <div class="col-xs-8">
-      <input type="text" class="form-control" id="input3" placeholder="@username" ng-model="username">
+    <input type="text" class="form-control" id="input3" placeholder="@username" ng-model="username">
     </div>
   </div>
-  <!--
-  <div>
-    <table class="table-striped well-lg"  width="100%">
-      <thead>
-      <tr>
-        <th>Tweet Text</th>
-        <th>Favorite Counts</th>
-      </tr>
-    </thead>
-      <tr ng-repeat="x in results">
-        <td>{{x.text_eng[0]}}</td>
-        <td>{{x.retweet_count}}</td>
-      </tr>
-      </table>
-  </div>
-  -->
-  </div>
-  <div ng-repeat="x in results">
+  
+</div>
+  <div class="spc3" ng-style="specialChar" ng-repeat="x in results">
     <p ng-bind-html="x"></p>
   </div>
   

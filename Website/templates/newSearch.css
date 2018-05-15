@@ -11,7 +11,7 @@ bdy {
 	box-sizing:border-box;
 	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
 	height: 80px;
-	background-color: #fff;
+	background-color: #c0deed;
 }
 
 .header-basic-light .header-limiter {
@@ -60,6 +60,10 @@ bdy {
 	color: #ffffff;
 	border-radius: 3px;
 	padding:6px 10px;
+}
+
+.spc1.spc3.span{
+	background-color: #0084b4
 }
 
 /* Making the header responsive. */

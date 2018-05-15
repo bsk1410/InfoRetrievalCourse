@@ -3,6 +3,7 @@ app = angular.module('myApp',['ngSanitize']);
 		$scope.lang ='English';
 		var isSpanish = 0;
 		var usr = 'no';
+		var hashtag='';
 		//$scope.searchBox = "Hillary Clinton";
 		$scope.names = ['RNCinCLE','ElectionDay','Debates2016','GOPConvention',
 		'DebateNight','ElectionNight','MAGA','TrumpPence16','ImWithHer','tcot',
@@ -22,14 +23,19 @@ app = angular.module('myApp',['ngSanitize']);
 			queryURL += ($scope.searchBox).replace(' ','%20');
 			if ($scope.lang==='Spanish'){
 					isSpanish = 1;
+				}else{
+					isSpanish = 0;
 				}
 			if ($scope.username){
 				usr = $scope.username;
+			} else{
+				usr = 'no';
 			}
 			if ($scope.selectedName){
 				//queryURL+='%20'+$scope.selectedName;
-				queryURL+='%20'+$scope.selectedName+'_'+isSpanish+'_'+usr;
+				hashtag = '%20'+$scope.selectedName;
 			}
+			queryURL+=hashtag+'_'+isSpanish+'_'+usr;
 			console.log(queryURL);
 			
 			$http.get(queryURL).then(function(response){
